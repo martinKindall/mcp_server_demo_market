@@ -5,7 +5,7 @@ import org.morsaprogramando.mcp_demo.models.MarketStatusResponse;
 
 public class FinhubService {
 
-    private static final String API_KEY = "<INSERT_API_KEY_HERE>";
+    private static final String API_KEY = System.getenv("FINNHUB_API_TOKEN");
     private final HttpService httpService;
 
     public FinhubService(HttpService httpService) {
